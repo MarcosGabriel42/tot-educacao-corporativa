@@ -81,7 +81,7 @@ export default function Footer() {
                 className="w-full px-4 py-3 rounded-md bg-[#1f1f1f] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
 
-              {/* Checkbox fictício */}
+              {/* Checkbox */}
               <label className="flex items-center gap-2 text-sm text-gray-300">
                 <input
                   type="checkbox"

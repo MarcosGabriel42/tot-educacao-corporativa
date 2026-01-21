@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import HeroBanner from "./components/HeroBanner";
 import Footer from "./components/Footer";
 
 function App() {
@@ -6,12 +7,8 @@ function App() {
     <>
       <Header />
 
-      <main className="pt-24">
-        <div className="h-[2000px] px-6">
-          <h1 className="text-3xl font-bold">
-            Home - TOT Educação Corporativa
-          </h1>
-        </div>
+      <main>
+        <HeroBanner overlayOpacity={0.5} />
       </main>
 
       <Footer />
