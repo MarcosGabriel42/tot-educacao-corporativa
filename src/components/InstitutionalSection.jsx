@@ -16,7 +16,7 @@ export default function InstitutionalSection() {
 
         <div className="mt-10">
           <a
-            href="#"
+            href="#agendar-demo"
             className="inline-block border-2 border-white text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:border-[#E34926] hover:bg-[#E34926] hover:text-[#FFFFFF]">
             Agende uma demonstração
           </a>

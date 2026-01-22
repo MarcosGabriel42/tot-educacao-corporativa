@@ -3,6 +3,7 @@ import HeroBanner from "./components/HeroBanner";
 import Footer from "./components/Footer";
 import InstitutionalSection from "./components/InstitutionalSection";
 import TotNews from "./components/TotNews";
+import DemoForm from "./components/DemoForm";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <HeroBanner overlayOpacity={0.5} />
         <TotNews />
         <InstitutionalSection />
-
+        <DemoForm />
       </main>
 
       <Footer />
