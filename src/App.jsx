@@ -1,11 +1,11 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Header />
 
-      {/* Conteúdo fake só pra testar o scroll */}
       <main className="pt-24">
         <div className="h-[2000px] px-6">
           <h1 className="text-3xl font-bold">
@@ -13,6 +13,8 @@ function App() {
           </h1>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
