@@ -8,7 +8,7 @@ import StatsSection from "./components/StatsSection";
 import SolutionsSection from "./components/SolutionsSection";
 import ClientsCarousel from "./components/ClientsCarousel";
 import FreeMaterial from "./components/FreeMaterial";
-
+import ShelfCourses from "./components/ShelfCourses";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <InstitutionalSection />
         <StatsSection />
         <SolutionsSection />
+        <ShelfCourses />
         <FreeMaterial />
         <DemoForm />
         <ClientsCarousel />        
