@@ -3,10 +3,30 @@ import manualImg from "../assets/ManualUniversidadeCorporativa.png";
 export default function FreeMaterial() {
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div
+        className="
+          max-w-6xl mx-auto px-6
+          grid grid-cols-1 md:grid-cols-2
+          gap-12 items-center
+        "
+      >
         
-        {/* Coluna esquerda */}
-        <div>
+        {/* Coluna da imagem */}
+        <div className="order-1 md:order-2 flex justify-center md:justify-end">
+          <img
+            src={manualImg}
+            alt="Manual da Universidade Corporativa"
+            className="
+              w-full
+              max-w-xs sm:max-w-sm md:max-w-md
+              h-auto
+              rounded-lg
+            "
+          />
+        </div>
+
+        {/* Coluna do texto */}
+        <div className="order-2 md:order-1 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-[#151616]">
             Material Gratuito
           </h2>
@@ -17,21 +37,23 @@ export default function FreeMaterial() {
             empresa. Aproveite!
           </p>
 
-          <button
-            className="mt-8 bg-[#E34926] text-white px-8 py-3 rounded-md font-semibold 
-                       hover:bg-[#cc3f20] transition-all duration-300"
-          >
-            Conheça agora
-          </button>
-        </div>
-
-        {/* Coluna direita */}
-        <div className="flex justify-center md:justify-end">
-          <img
-            src={manualImg}
-            alt="Manual da Universidade Corporativa"
-            className="max-w-full h-auto rounded-lg"
-          />
+          <div className="flex justify-center md:justify-start">
+            <button
+              className="
+                mt-8
+                bg-[#E34926]
+                text-white
+                px-8 py-3
+                rounded-md
+                font-semibold
+                hover:bg-[#cc3f20]
+                transition-all
+                duration-300
+              "
+            >
+              Conheça agora
+            </button>
+          </div>
         </div>
 
       </div>

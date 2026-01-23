@@ -10,52 +10,23 @@ import OpenFinance from "../assets/Cursos de Prateleira/Open-Finance.png";
 import GestaoAgilProjetos from "../assets/Cursos de Prateleira/Gestao-Agil-Projetos.png";
 
 const courses = [
-  {
-    title: "Inteligência Emocional",
-    image: InteligenciaEmocional,
-  },
-  {
-    title: "Excel Avançado",
-    image: ExcelAvancado,
-  },
-  {
-    title: "Desafios do Home Office",
-    image: DesafiosHomeOffice,
-  },
-  {
-    title: "7 Princípios do Cooperativismo",
-    image: PrincipiosCooperativismo,
-  },
-  {
-    title: "Matemática Financeira",
-    image: MatematicaFinanceira,
-  },
-  {
-    title: "Organização no Ambiente Corporativo",
-    image: OrganizacaoAmbienteCorporativo,
-  },
-  {
-    title: "Tomada de Decisão",
-    image: TomadaDecisao,
-  },
-  {
-    title: "NR 17",
-    image: NR17,
-  },
-  {
-    title: "Open Finance",
-    image: OpenFinance,
-  },
-  {
-    title: "Gestão Ágil de Projetos",
-    image: GestaoAgilProjetos,
-  },
+  { title: "Inteligência Emocional", image: InteligenciaEmocional },
+  { title: "Excel Avançado", image: ExcelAvancado },
+  { title: "Desafios do Home Office", image: DesafiosHomeOffice },
+  { title: "7 Princípios do Cooperativismo", image: PrincipiosCooperativismo },
+  { title: "Matemática Financeira", image: MatematicaFinanceira },
+  { title: "Organização no Ambiente Corporativo", image: OrganizacaoAmbienteCorporativo },
+  { title: "Tomada de Decisão", image: TomadaDecisao },
+  { title: "NR 17", image: NR17 },
+  { title: "Open Finance", image: OpenFinance },
+  { title: "Gestão Ágil de Projetos", image: GestaoAgilProjetos },
 ];
 
 export default function ShelfCourses() {
   return (
-    <section className="w-full bg-white py-24">
+    <section className="w-full bg-white py-15">
       <div className="max-w-7xl mx-auto px-6">
+
         {/* Título */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#151616]">
@@ -63,8 +34,16 @@ export default function ShelfCourses() {
           </h2>
         </div>
 
-        {/* Grid 5x2 */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        {/* Cards */}
+        <div
+          className="
+            flex gap-6 overflow-x-auto pb-6
+            snap-x snap-mandatory
+            sm:grid sm:grid-cols-2 sm:overflow-visible sm:snap-none
+            md:grid-cols-3
+            lg:grid-cols-5
+          "
+        >
           {courses.map((course, index) => (
             <div
               key={index}
@@ -77,6 +56,8 @@ export default function ShelfCourses() {
                 transition-all
                 duration-500
                 hover:shadow-[0_0_30px_rgba(227,73,38,0.45)]
+                min-w-full snap-center
+                sm:min-w-0
               "
             >
               {/* Imagem */}
@@ -124,6 +105,7 @@ export default function ShelfCourses() {
             Ver mais
           </button>
         </div>
+
       </div>
     </section>
   );

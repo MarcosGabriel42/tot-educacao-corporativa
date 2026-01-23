@@ -1,23 +1,19 @@
 const solutions = [
   {
     title: "TOT | Cursos Personalizados",
-    image:
-      "src/assets/Cursos-Personalizados.png",
+    image: "src/assets/Cursos-Personalizados.png",
   },
   {
     title: "TOT | Cursos de Prateleira",
-    image:
-      "src/assets/Cursos-Prateleira.png",
+    image: "src/assets/Cursos-Prateleira.png",
   },
   {
     title: "TOT | Plataforma de Aprendizagem",
-    image:
-      "src/assets/Plataforma-Aprendizagem.png",
+    image: "src/assets/Plataforma-Aprendizagem.png",
   },
   {
     title: "TOT | Consultoria Educacional",
-    image:
-      "src/assets/Consultoria-Educacional.png",
+    image: "src/assets/Consultoria-Educacional.png",
   },
 ];
 
@@ -25,6 +21,7 @@ export default function SolutionsSection() {
   return (
     <section className="w-full bg-[#151616] py-24">
       <div className="max-w-7xl mx-auto px-6">
+        
         {/* Título */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -36,7 +33,14 @@ export default function SolutionsSection() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          className="
+            flex gap-6 overflow-x-auto pb-4
+            snap-x snap-mandatory
+            sm:grid sm:grid-cols-2 sm:overflow-visible sm:snap-none
+            lg:grid-cols-4
+          "
+        >
           {solutions.map((item, index) => (
             <div
               key={index}
@@ -49,6 +53,8 @@ export default function SolutionsSection() {
                 transition-all
                 duration-500
                 hover:shadow-[0_0_30px_rgba(227,73,38,0.45)]
+                min-w-full snap-center
+                sm:min-w-0
               "
             >
               {/* Imagem */}
@@ -77,6 +83,7 @@ export default function SolutionsSection() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
