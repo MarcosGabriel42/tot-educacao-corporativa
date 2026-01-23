@@ -8,7 +8,7 @@ export default function HeroBanner({
       >
         {/* Imagem */}
         <img
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+          src="src/assets/HeroBanner.png"
           alt="Equipe focada"
           className="w-full h-full object-cover"
         />

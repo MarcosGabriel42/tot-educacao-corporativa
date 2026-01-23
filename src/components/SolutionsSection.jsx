@@ -2,22 +2,22 @@ const solutions = [
   {
     title: "TOT | Cursos Personalizados",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      "src/assets/Cursos-Personalizados.png",
   },
   {
     title: "TOT | Cursos de Prateleira",
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      "src/assets/Cursos-Prateleira.png",
   },
   {
     title: "TOT | Plataforma de Aprendizagem",
     image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+      "src/assets/Plataforma-Aprendizagem.png",
   },
   {
     title: "TOT | Consultoria Educacional",
     image:
-      "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70",
+      "src/assets/Consultoria-Educacional.png",
   },
 ];
 

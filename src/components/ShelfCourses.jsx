@@ -1,43 +1,54 @@
+import InteligenciaEmocional from "../assets/Cursos de Prateleira/Inteligencia-Emocional.jpg";
+import ExcelAvancado from "../assets/Cursos de Prateleira/Excel-Avancado.png";
+import DesafiosHomeOffice from "../assets/Cursos de Prateleira/Desafios-Home-Office.png";
+import PrincipiosCooperativismo from "../assets/Cursos de Prateleira/Principios-Cooperativismo.png";
+import MatematicaFinanceira from "../assets/Cursos de Prateleira/Matemática-Financeira.png";
+import OrganizacaoAmbienteCorporativo from "../assets/Cursos de Prateleira/Organização-Ambiente-Corporativo.png";
+import TomadaDecisao from "../assets/Cursos de Prateleira/Tomada-Decisao.png";
+import NR17 from "../assets/Cursos de Prateleira/NR 17.jpg";
+import OpenFinance from "../assets/Cursos de Prateleira/Open-Finance.png";
+import GestaoAgilProjetos from "../assets/Cursos de Prateleira/Gestao-Agil-Projetos.png";
+
 const courses = [
   {
     title: "Inteligência Emocional",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+    image: InteligenciaEmocional,
   },
   {
     title: "Excel Avançado",
-    image: "https://cdn.eadplataforma.app/client/edson/upload/crop/product/photo/cd9021ee6ad317947926ecc66e62f204_97png.png-product-photo-detail.png",
+    image: ExcelAvancado,
   },
   {
     title: "Desafios do Home Office",
-    image: "https://images.unsplash.com/photo-1587614203976-365c74645e83",
+    image: DesafiosHomeOffice,
   },
   {
     title: "7 Princípios do Cooperativismo",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    image: PrincipiosCooperativismo,
   },
   {
     title: "Matemática Financeira",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    image: MatematicaFinanceira,
   },
   {
     title: "Organização no Ambiente Corporativo",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
+    image: OrganizacaoAmbienteCorporativo,
   },
   {
     title: "Tomada de Decisão",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
+    image: TomadaDecisao,
   },
   {
     title: "NR 17",
-    image: "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
+    image: NR17,
   },
   {
     title: "Open Finance",
-    image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6",
+    image: OpenFinance,
   },
   {
     title: "Gestão Ágil de Projetos",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    image: GestaoAgilProjetos,
   },
 ];
 
