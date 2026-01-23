@@ -5,6 +5,7 @@ import InstitutionalSection from "./components/InstitutionalSection";
 import TotNews from "./components/TotNews";
 import DemoForm from "./components/DemoForm";
 import StatsSection from "./components/StatsSection";
+import SolutionsSection from "./components/SolutionsSection";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <TotNews />
         <InstitutionalSection />
         <StatsSection />
+        <SolutionsSection />
         <DemoForm />
       </main>
 

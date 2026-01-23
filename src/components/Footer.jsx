@@ -28,7 +28,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="w-full mt-20"
+      className="w-full"
       style={{
         backgroundColor: "#151616",
         fontFamily: "Arial, sans-serif",
