@@ -7,6 +7,7 @@ import DemoForm from "./components/DemoForm";
 import StatsSection from "./components/StatsSection";
 import SolutionsSection from "./components/SolutionsSection";
 import ClientsCarousel from "./components/ClientsCarousel";
+import FreeMaterial from "./components/FreeMaterial";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <InstitutionalSection />
         <StatsSection />
         <SolutionsSection />
+        <FreeMaterial />
         <DemoForm />
         <ClientsCarousel />        
       </main>
