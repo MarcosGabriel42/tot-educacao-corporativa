@@ -4,17 +4,22 @@ export default function Header() {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
+      // Detecta scroll para cima ou baixo
       if (currentScrollY < lastScrollY) {
         setShowHeader(true);
       } else {
         setShowHeader(false);
-        setMenuOpen(false); // fecha menu ao rolar pra baixo
+        setMenuOpen(false);
       }
+
+      // Detecta se saiu do topo
+      setIsScrolled(currentScrollY > 10);
 
       setLastScrollY(currentScrollY);
     };
@@ -27,17 +32,18 @@ export default function Header() {
     <header
       className={`
         fixed top-0 left-0 w-full z-50
-        transition-transform duration-300 ease-in-out
+        transition-all duration-300 ease-in-out
         ${showHeader ? "translate-y-0" : "-translate-y-full"}
       `}
       style={{
-        backgroundColor: "#e34926",
+        backgroundColor:
+          isScrolled && showHeader ? "#151616" : "transparent",
         fontFamily: "Arial, sans-serif",
       }}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-white">
         
-        {/* Logo fictícia */}
+        {/* Logo */}
         <div className="text-xl font-bold">
           TOT Educação
         </div>
@@ -63,7 +69,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        {/* Botão Hambúrguer (Mobile) */}
+        {/* Menu Mobile */}
         <button
           className="md:hidden flex flex-col gap-1"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -74,13 +80,13 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Menu Mobile */}
+      {/* Menu Mobile Dropdown */}
       <div
         className={`
           md:hidden overflow-hidden transition-all duration-300
           ${menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
         `}
-        style={{ backgroundColor: "#e34926" }}
+        style={{ backgroundColor: "#151616" }}
       >
         <ul className="flex flex-col px-6 pb-4 text-white text-sm font-medium gap-4">
           {[

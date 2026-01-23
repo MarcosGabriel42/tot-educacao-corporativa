@@ -4,7 +4,7 @@ export default function HeroBanner({
   return (
     <section className="w-full flex justify-center">
       <div
-        className="relative w-full h-[500px] overflow-hidden"
+        className="relative w-full h-[680px] overflow-hidden"
       >
         {/* Imagem */}
         <img
