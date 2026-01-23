@@ -1,0 +1,110 @@
+/* ==============================
+   CLIENTS SECTION
+================================ */
+.clients {
+  padding: 80px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.clients h2 {
+  color: #151616;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.clients p {
+  color: #151616;
+  margin-bottom: 40px;
+}
+
+/* ==============================
+   CAROUSEL LAYOUT
+================================ */
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  display: flex;
+  width: fit-content;
+}
+
+/* ==============================
+   LOGO CARD
+================================ */
+.logo-card {
+  flex: 0 0 calc(100% / 8); /* 8 logos visíveis */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo-card img {
+  max-width: 120px;
+  max-height: 60px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.logo-card img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.arrow {
+  color: #151616;
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 2;
+}
+
+
+.arrow.left {
+  margin-right: 10px;
+}
+
+.arrow.right {
+  margin-left: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .logo-card {
+    flex: 0 0 calc(100% / 5);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-card {
+    flex: 0 0 calc(100% / 3);
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+  }
+}

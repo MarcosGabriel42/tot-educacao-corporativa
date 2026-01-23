@@ -6,6 +6,8 @@ import TotNews from "./components/TotNews";
 import DemoForm from "./components/DemoForm";
 import StatsSection from "./components/StatsSection";
 import SolutionsSection from "./components/SolutionsSection";
+import ClientsCarousel from "./components/ClientsCarousel";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <StatsSection />
         <SolutionsSection />
         <DemoForm />
+        <ClientsCarousel />        
       </main>
 
       <Footer />
