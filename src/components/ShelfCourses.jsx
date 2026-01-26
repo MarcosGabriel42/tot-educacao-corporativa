@@ -24,7 +24,7 @@ const courses = [
 
 export default function ShelfCourses() {
   return (
-    <section className="w-full bg-white py-15">
+    <section className="w-full bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Título */}
